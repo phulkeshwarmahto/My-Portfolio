@@ -1,0 +1,314 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #e3dbdb;
+    color: #333;
+    line-height: 1.6;
+}
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu Styling */
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer; /* To indicate the menu is clickable */
+}
+
+.menu div {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+}
+
+/* Menu Links Styling */
+.menu-links {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    background-color: #7b7979;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: white;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.menu-links a:hover {
+    color: #ffe83b;
+}
+
+/* When the menu is clicked, show the links */
+.menu.active + .menu-links {
+    display: flex;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    margin: 0 0 20px;
+    color: #222;
+}
+
+/* Header */
+.header {
+    text-align: right;
+    background: linear-gradient(135deg, #1d4350, #a43931);
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header .hero {
+    text-align: center;
+    padding: 70px 0;
+}
+
+.header .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.header .hero .highlight {
+    color: #ffcc00;
+}
+
+.header .hero .cta-button {
+    background: #ffcc00;
+    color: #222;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.header .hero .cta-button:hover {
+    background: #e6b800;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffcc00;
+}
+
+/* About Section */
+.about {
+    padding: 70px 0;
+    background: #eeeeee;
+    text-align: center;
+}
+
+.about-content {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    font-size: 17px;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-content .highlight {
+    font-weight:bold;
+    text-decoration: underline;
+    color:#000000;
+}
+
+.about-content .profile-pic {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Skills Section */
+.skills {
+    padding: 70px 0;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.skill-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card i {
+    font-size: 2.5rem;
+    color: #1d4350;
+    margin-bottom: 15px;
+}
+
+/* Projects Section */
+.projects {
+    padding: 70px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background: #f9f9f9;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    padding: 15px;
+    font-size: 1.4rem;
+}
+
+.project-card p {
+    padding: 0 15px 15px;
+    color: #555;
+}
+
+.project-card .button {
+    display: block;
+    text-align: center;
+    background: #1d4350;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 15px 15px;
+    transition: background 0.3s;
+}
+
+.project-card .button:hover {
+    background: #a43931;
+}
+
+/* Contact Section */
+.contact {
+    padding: 70px 0;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form .form-group {
+    margin-bottom: 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background: #1d4350;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #a43931;
+}
+
+/* Footer */
+.footer {
+    padding: 30px 0;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer .social-links a {
+    margin: 0 15px;
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .social-links a:hover {
+    color: #ffcc00;
+}

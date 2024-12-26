@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- portfolio_styles.css -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+    <title>Phulkeshwar Mahto's Portfolio</title>
+    <link rel="stylesheet" href="portfolio_styles.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="menu-links" id="menuLinks">
+        <a href="#school">School Journey</a>
+        <a href="#college">College Journey</a>
+        <a href="#plus2">+2 Journey</a>
+    </div>
+    
+     <!-- javascript -->
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+    <!-- javascript -->
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                
+                <li><i></i> </li>
+                <li><a href="#about">About</a></li>
+                <br>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to <span class="highlight">Phulkeshwar</span>'s Portfolio</h1>
+            <p>Future Software Engineer | Designer | Problem Solver | Video Editor</p>
+            <a class="cta-button" href="#contact">Contact Me</a>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="WhatsApp Image 2024-12-01 at 20.27.27_4a53cda9.jpg" alt="Profile Picture" class="profile-pic">
+                <p>
+                    Hello, I'm <span class="highlight">Phulkeshwar Mahto</span>, a dedicated BTech student in Computer Engineering at NIAMT (National Institute of Advanced Manufacturing Technology), Ranchi. Passionate to be a software engineer specializing in creating efficient and scalable
+                    solutions. With expertise in web development, editing and UI/UX design, I aim to build a world class applications
+                    that are both functional and visually stunning. With a strong passion for technology and problem-solving, I am constantly learning and exploring new concepts in the field of software engineering.
+                <br>
+                <br>
+                    I have a keen interest in programming and data structures, and I'm currently strengthening my skills in C++ and Data Structures & Algorithms (DSA). As I continue my academic journey, I am gaining hands-on experience through personal projects and web development. One of my team project is the Student Report Card System, a web application that allows teachers to input grades and students to view their results.
+                    
+                    I am passionate about technology education, and I also run a YouTube channel, where I share educational content related to science facts, technology, and more. With a goal to make learning accessible and engaging, I aim to inspire others by simplifying complex topics.
+                    <br>
+                    <br>
+                    In the future, I aspire to become a software engineer, where I can contribute my skills to creating impactful software solutions. My learning journey is shaped by curiosity, determination, and a desire to continuously improve.
+                    
+                    Feel free to reach out to me for collaborations, ideas, or just a conversation about technology and learning. Let's work together to bring your ideas to life!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML</h3>
+                    <p>Proficient in building semantic and accessible web structures. create web pages, design layouts, integrate multimedia, and develop interactive content, for web development and design projects.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                    <p>Experiencing creating responsive and modern designs. styling web pages, create layouts, design animations, improve user interfaces, and enhance website aesthetics</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python </h3>
+                    <p>Skilled in Python, allowing me to create projects in data science, automation, AI, game development, and more that automate tasks, and build scalable solutions..</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-code"></i>
+                    <h3>C & C++</h3>
+                    <p>C and C++ allows me to build efficient system software, embedded applications, and high-performance software , memory management, and advanced problem-solving skills for complex software development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="wjc-student-report-card-template-free.jpg" alt="Project 1">
+                    <h3>Student Report Card</h3>
+                    <p>The Student Report Card system allows teachers to input grades and students to view their results securely using a registration number.</p>
+                    <a href="https://helloniamtandourproject.on.drv.tw/student%20report%20card/" target="_balnk" class="button">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="niamt.jpeg" alt="Project 2">
+                    <h3>NIAMT , Ranchi WebPage</h3>
+                    <p>The NIAMT website showcases college information, courses, events, and resources, providing a user-friendly interface for students and faculty.</p>
+                    <a href="https://helloniamtandourproject.on.drv.tw/student%20report%20card/nifft.html" target="_blank" class="button">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="groceries-cropped.jpg" alt="Project 3">
+                    <h3>Grocery Website</h3>
+                    <p>The grocery website allows users to browse and purchase products online, offering easy navigation, secure payment, and fast delivery options.</p>
+                    <a href="#" class="button">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form class="contact-form" action="mailto:pkmahto009@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message " rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; Phulkeshwar Mahto. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/phulkeshwar-mahto-868ab0312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/phulkeshwarmahto" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/phulkeshwarmahto2005/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/Phulkeshwar086" target="_blank"><i class="fab fa-twitter" ></i></a>
+            <a href="https://youtube.com/@sciencefactsvid?si=ff_M_O8cyER57a5m" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
