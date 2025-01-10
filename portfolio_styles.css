@@ -12,52 +12,19 @@ body {
     margin: 0;
     padding: 0;
 }
+#toggle {
+    width: 35px;
+    padding-left: 15px;
 
-/* Menu Styling */
-.menu {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer; /* To indicate the menu is clickable */
 }
 
-.menu div {
-    width: 30px;
-    height: 4px;
-    background-color: #333;
-}
-
-/* Menu Links Styling */
 .menu-links {
-    position: absolute;
-    top: 40px;
-    left: 10px;
-    display: none; /* Initially hidden */
-    flex-direction: column;
-    background-color: #7b7979;
-    padding: 10px;
-    border-radius: 5px;
+    display: none;
 }
 
-.menu-links a {
-    text-decoration: none;
-    color: white;
-    margin: 5px 0;
-    font-size: 16px;
+.toggle:hover{
+    color: #ddd;
 }
-
-.menu-links a:hover {
-    color: #ffe83b;
-}
-
-/* When the menu is clicked, show the links */
-.menu.active + .menu-links {
-    display: flex;
-}
-
 .container {
     width: 90%;
     max-width: 1200px;
